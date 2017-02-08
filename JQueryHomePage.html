@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+        body {
+	           background-color: #e9e9e9 ;
+	           color: #333333;
+	           text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+	           font-weight: bold;
+             }
+	       
+		 
+    </style>
+	<script>
+        $(document).on("pagecreate","#contact",function(){
+        $("p1").on("tap",function(){
+        $(this).hide();
+         });                       
+         });
+    </script>
+</head>
+
+<body>
+
+<! -- Home Page -->
+  <div data-role = "page" id = "home" >
+    <div data-role = "header">
+	  <h1> Home Page <h1>
+	  <div data-role="navbar">
+       <ul>
+        <li><a href="#home" class="ui-btn-active ui-state-persist" data-transition = "flow" data-icon="location">Home</a></li>
+        <li><a href="#contact" data-transition = "flow" data-icon="comment">Contact</a></li>
+       </ul>
+      </div>
+	</div>
+	
+	<div data-role = "main" id = "home" >
+	 <p> Welcome to my JQuery Mobile homepage! Click the Contact Link at the top of the page to see the contact Page. 
+	 
+	 </p>
+	</div>
+	
+	<div data-role = "footer" id = "home" >
+	 <p> Nathan Reichert CIS475-901 </p>
+	</div>
+   
+  </div>
+	
+	
+<! -- Contact Page -->
+  <div data-role = "page" id = "contact" >
+    <div data-role = "header">
+	  <h1> Contact Page <h1>
+	  <div data-role="navbar">
+       <ul>
+        <li><a href="#home"     data-transition = "flow" data-icon="location">Home</a></li>
+        <li><a href="#contact" class="ui-btn-active ui-state-persist" data-transition = "flow" data-icon="comment">Contact</a></li>
+       </ul>
+      </div>
+	</div>
+	
+	<div data-role = "main" id = "contact" >
+	 <p> Please send feedback to the email address below! Thank you! </p>
+	</div>
+	
+	<div data-role = "footer" id = "contact" >
+	 <p1> Email us at Reichert228@live.missouristate.edu </p1> </br> </br> 
+	 <p3> Tap above text to make it vanish ^ </p>
+	</div>
+   
+   
+   <!-- get orientation 
+   <script>
+       $(window).on("orientationchange",function(){
+       if(window.orientation == 0) // Portrait
+       {
+        document.write(You are in Portrait Mode);
+       }
+       else // Landscape
+       {
+        document.write(You are in Landscape Mode);
+       }
+       });
+   </script>
+  -->
+  
+  </div>
+</body>
+</html>
