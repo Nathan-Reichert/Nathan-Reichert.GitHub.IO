@@ -8,9 +8,8 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <style type="text/css">
         body {
-	           background-color: #e9e9e9 ;
-	           color: #333333;
-	           text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
+	           background-color: "black";
+	           color: "black";
 	           font-weight: bold;
              }
 	       
@@ -23,6 +22,7 @@
          });                       
          });
     </script>
+	
 </head>
 
 <body>
@@ -50,7 +50,7 @@
 	 </br>
 	 </br>
 	 </br>
-	 
+	 <p id="orientation"></p>
 	</div>
 	
 	<div data-role = "footer" id = "home" >
@@ -82,6 +82,7 @@
 	 </br>
 	 </br>
 	 </br>
+	 <p id="orientation"></p>
 	</div>
 	
 	<div data-role = "footer" id = "contact" >
@@ -95,7 +96,7 @@
        $(window).on("orientationchange",function(){
        if(window.orientation == 0) // Portrait
        {
-        document.write(You are in Portrait Mode);
+        document.getElementById("orientation").innerHTML = "Hello Dolly.";
        }
        else // Landscape
        {
@@ -103,6 +104,8 @@
        }
        });
    </script>
+   
+   
   
   
   </div>
