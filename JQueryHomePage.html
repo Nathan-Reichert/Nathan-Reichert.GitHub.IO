@@ -27,11 +27,11 @@
        $(window).on("orientationchange",function(){
           if(window.orientation == 0)
           {
-            $("p").text("The orientation has changed to portrait!").css({"background-color":"yellow","font-size":"300%"});
+            $("orientation").text("The orientation has changed to portrait!");
           }
           else
           {
-            $("p").text("The orientation has changed to landscape!").css({"background-color":"pink","font-size":"200%"});
+            $("orientation").text("The orientation has changed to landscape!");
           }
           });                   
         });
@@ -105,22 +105,6 @@
 	</div>
    
    
-   <!-- get orientation 
-   <script>
-       $(document).on("pagecreate",function(event){
-       $(window).on("orientationchange",function(){
-       if(window.orientation == 0) // Portrait
-       {
-        document.getElementById("orientation").innerHTML = "You are in Portrait Mode";
-       } //end if
-       else // Landscape
-       {
-        document.getElementById("orientation").innerHTML = "You are in Landscape Mode";
-       } //end else
-       } //end function
-	   )};
-   </script>
-   -->
    
   
   
