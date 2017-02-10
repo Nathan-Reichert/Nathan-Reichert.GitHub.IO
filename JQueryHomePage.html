@@ -24,14 +24,14 @@
     </script>
 	<script>
        $(document).on("pagecreate",function(event){
-       $(window).on("orientationchange",function(){
+       $(window).on(orientationchange",function(){
           if(window.orientation == 0)
           {
-            $("#orientation").text("The orientation has changed to portrait!");
+            $(".orientation").text("The orientation has changed to portrait!");
           }
           else
           {
-            $("#orientation").text("The orientation has changed to landscape!");
+            $(".orientation").text("The orientation has changed to landscape!");
           }
           });                   
         });
@@ -64,7 +64,7 @@
 	 </br>
 	 </br>
 	 </br>
-	 <p id="orientation"></p>
+	 <p class="orientation"></p>
 	</div>
 	
 	<div data-role = "footer" id = "home" >
@@ -96,7 +96,7 @@
 	 </br>
 	 </br>
 	 </br>
-	 <p id="orientation"></p>
+	 <p class="orientation"></p>
 	</div>
 	
 	<div data-role = "footer" id = "contact" >
