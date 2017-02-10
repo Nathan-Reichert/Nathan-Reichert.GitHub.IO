@@ -93,16 +93,18 @@
    
    <!-- get orientation -->
    <script>
+       $(document).on("pagecreate",function(event){
        $(window).on("orientationchange",function(){
        if(window.orientation == 0) // Portrait
        {
-        document.getElementById("orientation").innerHTML = "Hello Dolly.";
-       }
+        document.getElementById("orientation").innerHTML = "You are in Portrait Mode";
+       } //end if
        else // Landscape
        {
-        document.write(You are in Landscape Mode);
-       }
-       });
+        document.getElementById("orientation").innerHTML = "You are in Landscape Mode";
+       } //end else
+       } //end function
+	   )};
    </script>
    
    
